@@ -1,18 +1,62 @@
-Calculadora de numeros complejos
-Este proyecto consiste en desarrollar una libreria la cual se capaz de realizar operaciones con numeros complejos.
+QCL
+Quantum Computing Library
 
-Pre-requisitos
-Debe tener instalado en su computador Python en lo posible la version 3.7, lo cual lo puede hacer desde su pagina oficial y siguiendo los pasos de instalacion.
+Sección 1
+DEscripción...dadads
 
-Instalación
-Para instalar y ejecutar esta libreria lo que debe hacer es ejecutar el IDLE de Python y desde ahí abrir los archivos para ejecutarlo.
+Project Title
+One Paragraph of project description goes here
 
-Ejecutando las pruebas
-Para ejecutar de manera correcta las pruebas lo que se necesita hacer es abrir el archivo Pruebas.py y ejecutarlas(f5).
+Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Analice las pruebas end-to-end
-Todas las pruebas realizadas son para hacer una comprobacion del correcto funcionamienito de todos los metodos realizados y poniendo en evidencia todas sus funcionalidades.
-self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[[1,-2],[3,4]])
+Prerequisites
+What things you need to install the software and how to install them
 
-Construido con
-Python 3.7 - Usado para desarrollar la libreria.
+Give examples
+Installing
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+Give the example
+And repeat
+
+until finished
+End with an example of getting some data out of the system or using it for a little demo
+
+Running the tests
+Explain how to run the automated tests for this system
+
+Break down into end to end tests
+Explain what these tests test and why
+
+Give an example
+And coding style tests
+Explain what these tests test and why
+
+Give an example
+Deployment
+Add additional notes about how to deploy this on a live system
+
+Built With
+Dropwizard - The web framework used
+Maven - Dependency Management
+ROME - Used to generate RSS Feeds
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+
+Versioning
+We use SemVer for versioning. For the versions available, see the tags on this repository.
+
+Authors
+Billie Thompson - Initial work - PurpleBooth
+See also the list of contributors who participated in this project.
+
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+Acknowledgments
+Hat tip to anyone whose code was used
+Inspiration
+etc
