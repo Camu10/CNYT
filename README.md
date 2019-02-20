@@ -1,62 +1,39 @@
-QCL
-Quantum Computing Library
+# Calculadora de numeros complejos
 
-Sección 1
-DEscripción...dadads
+Este proyecto consiste en desarrollar una libreria la cual se capaz de realizar operaciones con numeros complejos.
 
-Project Title
-One Paragraph of project description goes here
+## Comenzando 🚀
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Prerequisites
-What things you need to install the software and how to install them
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+### Pre-requisitos 📋
 
-Say what the step will be
+Debe tener instalado en su computador Python en lo posible la version 3.7, lo cual lo puede hacer desde su pagina oficial y siguiendo los pasos de instalacion.
 
-Give the example
-And repeat
+### Instalación 🔧
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+Para instalar y ejecutar esta libreria lo que debe hacer es ejecutar el IDLE de Python y desde ahí abrir los archivos para ejecutarlo.
 
-Running the tests
-Explain how to run the automated tests for this system
+## Ejecutando las pruebas ⚙️
 
-Break down into end to end tests
-Explain what these tests test and why
+Para ejecutar de manera correcta las pruebas lo que se necesita hacer es abrir el archivo Pruebas.py y ejecutarlas(f5).
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+### Analice las pruebas end-to-end 🔩
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+Todas las pruebas realizadas son para hacer una comprobacion del correcto funcionamienito de todos los metodos realizados y poniendo en evidencia todas sus funcionalidades.
 
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
+```
+self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[[1,-2],[3,4]])
+```
 
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+## Construido con 🛠️
 
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
+* [Python](https://www.python.org/) - Python 3.7 - Usado para desarrollar la libreria.
 
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+## Autores ✒️
 
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Carlos Murillo** - *Desarrollo* - [Camu10](https://github.com/Camu10)
