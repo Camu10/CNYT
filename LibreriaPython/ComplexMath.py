@@ -65,6 +65,23 @@ def productoMatrices(mat1,mat2):
                 c += (mat1[i][k])*(mat2[k][j])
             res[i].append(c)
     return res
+def productoMatrizVectorComplejos(mat1,vec):
+    res=[]
+    for i in range(len(mat1)):
+        c = (0,0)
+        for j in range(len(vec)):
+            mul = producto(mat1[i][j],vec[j])
+            c = suma(c,mul)
+        res.append(c)
+    return res
+def productoMatrizVector(mat1,vec):
+    res=[]
+    for i in range(len(mat1)):
+        c = 0
+        for j in range(len(vec)):
+            c += mat1[i][j] * vec[j]
+        res.append(c)
+    return res
 def productoInterno(mat1,mat2):
     trans = transpuesta(mat1)
     res = productoMatrices(trans,mat2)

@@ -1,5 +1,6 @@
 from math import *
 from ComplexMath import *
+from Simuladores import *
 
 def modulo(c):
     return sqrt((c[0]**2)+(c[1]**2))
