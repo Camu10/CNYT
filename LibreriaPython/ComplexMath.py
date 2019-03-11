@@ -82,9 +82,24 @@ def productoMatrizVector(mat1,vec):
             c += mat1[i][j] * vec[j]
         res.append(c)
     return res
+def productoVectorVectorComplejos(vec1,vec2):
+    res=[]
+    for i in range(len(vec1)):
+        c = (0,0)
+        for j in range(len(vec1)):
+            mul = producto(vec1[i],vec2[j])
+            c = suma(c,mul)
+        res.append(c)
+    return res
 def productoInterno(mat1,mat2):
     trans = transpuesta(mat1)
     res = productoMatrices(trans,mat2)
+    return res
+def productoInternoVectoresComplejos(mat1,mat2):
+    r = productoMatrices(mat1,mat2)
+    res = []
+    for i in r:
+        res.append((i[0],i[1]))
     return res
 def normComplex(mat):
     res = 0
@@ -97,6 +112,13 @@ def normVector(mat):
     res = 0
     for i in range(len(mat)):
         res += mat[i]**2
+    res = res **0.5
+    return res
+def normVectorComplejo(mat):
+    res = 0
+    for i in range(len(mat)):
+        res += mat[i][0]**2
+        res += mat[i][1]**2
     res = res **0.5
     return res
 def distanciaVectores(mat1,mat2):
