@@ -12,12 +12,11 @@ def rendijas(num,inicial,estado,clicks):
         estado = productoMatrizVector(inicial,estado)
     return estado
 
-def rendijasComplejos(num,inicial,estado,clicks):
+def rendijasComplejos(num,inicial,estado):
     for i in range(num):
         inicial = productoMatricesComplejas(inicial,inicial)
-    for i in range(clicks):
-        estado = productoMatrizVectorComplejos(inicial,estado)
-    return estado
+    res = productoMatrizVectorComplejos(inicial,estado)
+    return res
 def particula(points,pos):
     norm = normVectorComplejo(points)
     probablidad = math.pow(pos,2)/math.pow(norm,2)

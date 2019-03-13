@@ -92,7 +92,7 @@ class Pruebas(unittest.TestCase):
     def test_rendijas_complejas(self):
         mat = [[(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0)],[(0.5,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0)],[(0.5,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0)],[(0,0),(0.33,0),(0,0),(1,0),(0,0),(0,0),(0,0),(0,0)],[(0,0),(0.33,0),(0,0),(0,0),(1,0),(0,0),(0,0),(0,0)],[(0,0),(0.33,0),(0.33,0),(0,0),(0,0),(1,0),(0,0),(0,0)],[(0,0),(0,0),(0.33,0),(0,0),(0,0),(0,0),(1,0),(0,0)],[(0,0),(0,0),(0.33,0),(0,0),(0,0),(0,0),(0,0),(1,0)]]
         estado = [(1,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0)]
-        resultado = Complex.rendijasComplejos(2,mat,estado,1)
+        resultado = Complex.rendijasComplejos(2,mat,estado)
         self.assertEqual(resultado,[(0.0, 0.0), (0.0, 0.0), (0.0, 0.0), (0.165, 0.0), (0.165, 0.0), (0.33, 0.0), (0.165, 0.0), (0.165, 0.0)])
 
     def test_particula(self):
@@ -101,7 +101,6 @@ class Pruebas(unittest.TestCase):
         self.assertEqual(resultado,0.05263157894736841)
 
     def test_particula_ket_doble(self):
-
         vec1 = [(1,0),(0,1)]
         vec2 = [(0,1),(-1,0)]
         resultado = Complex.paticulaDobleKet(vec1,vec2)
