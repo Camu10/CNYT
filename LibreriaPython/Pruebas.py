@@ -105,5 +105,15 @@ class Pruebas(unittest.TestCase):
         vec2 = [(0,1),(-1,0)]
         resultado = Complex.paticulaDobleKet(vec1,vec2)
         self.assertEqual(resultado,[(0,-1),(-1,0)])
+    def test_observable_ket_media(self):
+        mat = [[(1,0),(0,-1)],[(0,1),(2,0)]]
+        vec = [(0.7071067811865476,0),(0,0.7071067811865476)]
+        resultado = Complex.observableKet(mat,vec)
+        self.assertEqual(resultado,(2.5000000000000004, 0.0))
+    def test_observable_ket_varianza(self):
+        mat = [[(1,0),(0,-1)],[(0,1),(2,0)]]
+        vec = [(0.7071067811865476,0),(0,0.7071067811865476)]
+        resultado = Complex.observableKetVarianza(mat,vec)
+        self.assertEqual(resultado,0.25)
 if __name__ == '__main__':
     unittest.main()

@@ -15,6 +15,12 @@ def sumaMatrices(mat1,mat2):
         for j in range(len(mat1[i])):
             res[i].append(mat1[i][j] + mat2[i][j])
     return res
+def restaDirecta(mat1,mat2):
+    res = [[] for _ in range(len(mat1))]
+    for i in range(len(mat1)):
+        for j in range(len(mat1[i])):
+            res[i].append(resta(mat1[i][j],mat2[i][j]))
+    return res
 def restaVectores(mat1,mat2):
     res = []
     for i in range(len(mat1)):
@@ -46,6 +52,11 @@ def conjugadoMatriz(mat):
     for i in range(len(mat)):
         for j in range(len(mat[i])):
             res[i].append((mat[i][j][0],-mat[i][j][1]))
+    return res
+def conjugadoVector(mat):
+    res=[]
+    for i in range(len(mat)):
+        res.append((mat[i][0],-mat[i][1]))
     return res
 def productoMatricesComplejas(mat1,mat2):
     res=[[] for _ in range(len(mat1))]
