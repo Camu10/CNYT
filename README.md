@@ -2,7 +2,7 @@
 
 Este proyecto consiste en desarrollar una libreria la cual se capaz de realizar operaciones con numeros complejos.
 ## Numeros Complejos
-* Adicion.
+* Suma.
 * Resta.
 * Conjugado.
 * Inverso.
@@ -39,7 +39,7 @@ Para instalar y ejecutar esta libreria lo que debe hacer es ejecutar el IDLE de 
 ## Ejecutando las pruebas ⚙️
 
 Para ejecutar de manera correcta las pruebas lo que se necesita hacer es abrir el archivo Pruebas.py y ejecutarlas(f5).
-# Prueba de producto escalar
+## Prueba de producto escalar
 ```
 def test_producto_scalar(self):
         mat1 = [(6,3),(0,0),(5,1),(4,0)]
@@ -47,7 +47,15 @@ def test_producto_scalar(self):
         resultado = Complex.productoScalarMatriz(scalar,mat1)
         self.assertEqual(resultado,[(12, 21), (0, 0), (13, 13), (12, 8)])
 ```
-
+## Prueba de producto interno
+```
+def test_producto_interno(self):
+        mat1 = [[1,2],[0,1]]
+        mat2 = [[0,-1],[-1,0]]
+        mat3 = [[2,1],[1,3]]
+        resultado = Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3)
+        self.assertEqual(resultado,[[1,-2],[3,4]])
+```
 ### Analice las pruebas end-to-end 🔩
 
 Todas las pruebas realizadas son para hacer una comprobacion del correcto funcionamienito de todos los metodos realizados y poniendo en evidencia todas sus funcionalidades.
@@ -59,6 +67,7 @@ self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[
 En este experimento utilizamos un láser y un trozo de papel aluminio pegado a una octavo de papel cartón con dos cortes horizontales en el papel muy pegados entre sí. Apuntamos el laser a el medio de los dos cortes del papel aluminio logrando así que la luz del láser pase a través de los dos cortes, lo que produce que las ondas de luz que atraviesan estos dos cortes produzcan una interferencia entre si , logrando una distorsión y generando así el patrón de luz que podemos observar.
 <img src = "Foto1.jpg" />
 Como podemos ver en la imagen la luz del lazer se distorciona en varios puntos generando asi este patron.
+
 ## Construido con 🛠️
 
 * [Python](https://www.python.org/) - Python 3.7 - Usado para desarrollar la libreria.
