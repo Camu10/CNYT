@@ -65,8 +65,16 @@ Todas las pruebas realizadas son para hacer una comprobacion del correcto funcio
 self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[[1,-2],[3,4]])
 ```
 ## Experimento de la Roble Rendija
+
+### Explicacion teorica
+Cuando estas particulas llegan a la doble rendija, cada una de estas rendijas actuará como un foco emisor secundiaro. Por lo tanto se crearán dos ondas que interferirán. Por esto podemos observar regiones con mucha intensidad (interferencia constructiva de la ondas) y otras regiones con poca intensidad (interferencia destructiva de las ondas).Esto es lo que llamamos patrón de interferencia.
+Lo primero que vemos es que los electrones llegan a la pantalla y colisionan con ella en regiones localizadas. Esto nos lleva a pensar que se comportan como electrones. Si dejamos que el experimento avance, conforme se van acumulando tales colisiones vemos algo asomboroso. Se comienza a formar un patrón de franjas con áreas de mucha intensidad y areas de poca intensidad. Estamos recostruyendo un patrón de interferencias. Parece lógico que el electrón, cuando ha estado en vuelo desde las rendijas hasta la pantalla, se ha comportado como una onda.
+
+### Procedimiento
 En este experimento utilizamos un láser y un trozo de papel aluminio pegado a una octavo de papel cartón con dos cortes horizontales en el papel muy pegados entre sí. Apuntamos el laser a el medio de los dos cortes del papel aluminio logrando así que la luz del láser pase a través de los dos cortes, lo que produce que las ondas de luz que atraviesan estos dos cortes produzcan una interferencia entre si , logrando una distorsión y generando así el patrón de luz que podemos observar.
+
 <img src = "Foto1.jpg" />
+
 Como podemos ver en la imagen la luz del lazer se distorciona en varios puntos generando asi este patron.
 
 ## Construido con 🛠️
