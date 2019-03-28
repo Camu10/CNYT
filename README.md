@@ -57,7 +57,7 @@ self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[
 ## Experimento de la Roble Rendija
 En este experimento utilizamos un láser y un trozo de papel aluminio pegado a una octavo de papel cartón con dos cortes horizontales en el papel muy pegados entre sí. Apuntamos el laser a el medio de los dos cortes del papel aluminio logrando así que la luz del láser pase a través de los dos cortes, lo que produce que las ondas de luz que atraviesan estos dos cortes produzcan una interferencia entre si , logrando una distorsión y generando así el patrón de luz que podemos observar.
 
-
+<img src = "Foto1.jpg" />
 ## Construido con 🛠️
 
 * [Python](https://www.python.org/) - Python 3.7 - Usado para desarrollar la libreria.
