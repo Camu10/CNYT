@@ -115,5 +115,14 @@ class Pruebas(unittest.TestCase):
         vec = [(0.7071067811865476,0),(0,0.7071067811865476)]
         resultado = Complex.observableKetVarianza(mat,vec)
         self.assertEqual(resultado,0.25)
+    def test_valores_propios(self):
+        mat = [[(-1,0),(0,-1)],[(0,1),(1,0)]]
+        resultado = Complex.valoresPropios(mat)
+        self.assertEqual(resultado,[-1.41421356,1.41421356])
+    def test_canicas_complejas(self):
+        mat = [[(0,0),(0.7071067811865475,0),(0.7071067811865475,0),(0,0)],[(0,0.7071067811865475),(0,0),(0,0),(0.7071067811865475,0)],[(0.7071067811865475,0),(0,0),(0,0),(0,0.7071067811865475)],[(0,0),(0.7071067811865475,0),(-0.7071067811865475,0),(0,0)]]
+        estado = [(1,0),(0,0),(0,0),(0,0)]
+        resultado = Complex.rendijasComplejos(3,mat,estado)
+        self.assertEqual(resultado,[(-0.49999999999999956, -0.49999999999999956), (0.0, 0.0), (0.0, 0.0), (0.49999999999999956, -0.49999999999999956)])
 if __name__ == '__main__':
     unittest.main()
