@@ -39,7 +39,8 @@ Para instalar y ejecutar esta libreria lo que debe hacer es ejecutar el IDLE de 
 ## Ejecutando las pruebas ⚙️
 
 Para ejecutar de manera correcta las pruebas lo que se necesita hacer es abrir el archivo Pruebas.py y ejecutarlas(f5).
-## Prueba de producto escalar
+
+### Prueba de producto escalar
 ```
 def test_producto_scalar(self):
         mat1 = [(6,3),(0,0),(5,1),(4,0)]
@@ -47,7 +48,7 @@ def test_producto_scalar(self):
         resultado = Complex.productoScalarMatriz(scalar,mat1)
         self.assertEqual(resultado,[(12, 21), (0, 0), (13, 13), (12, 8)])
 ```
-## Prueba de producto interno
+### Prueba de producto interno
 ```
 def test_producto_interno(self):
         mat1 = [[1,2],[0,1]]
