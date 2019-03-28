@@ -1,7 +1,26 @@
 # Calculadora de numeros complejos
 
 Este proyecto consiste en desarrollar una libreria la cual se capaz de realizar operaciones con numeros complejos.
-
+## Numeros Complejos
+Adicion.
+Resta.
+Conjugado.
+Inverso.
+Multiplicacion.
+Division.
+Modulo.
+Fase.
+Producto escalar.
+Representacion polar y cartesiana.
+## Matrices Complejas
+Suma
+Resta
+Conjugado
+Multiplicacion
+Adjunta
+Inverso
+Producto tensor
+Producto escalar
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -19,6 +38,14 @@ Para instalar y ejecutar esta libreria lo que debe hacer es ejecutar el IDLE de 
 ## Ejecutando las pruebas ⚙️
 
 Para ejecutar de manera correcta las pruebas lo que se necesita hacer es abrir el archivo Pruebas.py y ejecutarlas(f5).
+# Prueba de producto escalar
+```
+def test_producto_scalar(self):
+        mat1 = [(6,3),(0,0),(5,1),(4,0)]
+        scalar = (3,2)
+        resultado = Complex.productoScalarMatriz(scalar,mat1)
+        self.assertEqual(resultado,[(12, 21), (0, 0), (13, 13), (12, 8)])
+```
 
 ### Analice las pruebas end-to-end 🔩
 
@@ -27,6 +54,9 @@ Todas las pruebas realizadas son para hacer una comprobacion del correcto funcio
 ```
 self.assertEqual(Complex.productoInterno(Complex.sumaMatrices(mat1,mat2),mat3),[[1,-2],[3,4]])
 ```
+## Experimento de la Roble Rendija
+En este experimento utilizamos un láser y un trozo de papel aluminio pegado a una octavo de papel cartón con dos cortes horizontales en el papel muy pegados entre sí. Apuntamos el laser a el medio de los dos cortes del papel aluminio logrando así que la luz del láser pase a través de los dos cortes, lo que produce que las ondas de luz que atraviesan estos dos cortes produzcan una interferencia entre si , logrando una distorsión y generando así el patrón de luz que podemos observar.
+
 
 ## Construido con 🛠️
 
