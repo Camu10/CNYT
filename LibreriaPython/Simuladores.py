@@ -55,6 +55,6 @@ def valoresPropios(mat):
         for j in range(len(mat[0])):
             mat1[i].append(complex(mat[i][j][0],mat[i][j][1]))
     w , v= LA.eigh(mat1)
-    print(w)
+    return [w[0],w[1]]
 
 
