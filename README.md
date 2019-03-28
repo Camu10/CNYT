@@ -2,25 +2,26 @@
 
 Este proyecto consiste en desarrollar una libreria la cual se capaz de realizar operaciones con numeros complejos.
 ## Numeros Complejos
-Adicion.
-Resta.
-Conjugado.
-Inverso.
-Multiplicacion.
-Division.
-Modulo.
-Fase.
-Producto escalar.
-Representacion polar y cartesiana.
+*Adicion.
+*Resta.
+*Conjugado.
+*Inverso.
+*Multiplicacion.
+*Division.
+*Modulo.
+*Fase.
+*Producto escalar.
+*Representacion polar y cartesiana.
 ## Matrices Complejas
-Suma
-Resta
-Conjugado
-Multiplicacion
-Adjunta
-Inverso
-Producto tensor
-Producto escalar
+*Suma
+*Resta
+*Conjugado
+*Multiplicacion
+*Adjunta
+*Inverso
+*Producto tensor
+*Producto escalar
+
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
